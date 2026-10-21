@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="300" viewBox="0 0 490 300">
+  <defs>
+    <clipPath id="cstudor"><rect width="490" height="300" rx="24"/></clipPath>
+    <radialGradient id="rstudor" cx="85%" cy="15%" r="70%"><stop offset="0" stop-color="#4E8A78" stop-opacity=".55"/><stop offset="1" stop-color="#4E8A78" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g clip-path="url(#cstudor)">
+    <rect width="490" height="300" fill="#14211E"/>
+    <rect width="490" height="300" fill="url(#rstudor)">
+      <animate attributeName="opacity" values=".7;1;.7" dur="6s" repeatCount="indefinite"/></rect>
+    <text x="462" y="96" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="700" fill="#fff" fill-opacity=".06">02</text>
+    <rect x="32" y="36" width="177" height="24" rx="12" fill="#A8D5C2" fill-opacity=".16"/>
+    <text x="44" y="52" font-family="Menlo, Consolas, monospace" font-size="12" fill="#A8D5C2">AI · Machine Learning</text>
+    <text x="32" y="112" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">Studor</text>
+    <rect x="32" y="124" width="36" height="3" rx="1.5" fill="#A8D5C2">
+      <animate attributeName="width" values="36;64;36" dur="4s" repeatCount="indefinite"/></rect>
+  <text x="32" y="150" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="15" fill="#D9DEE6">Predicts a student&#x27;s academic risk from attendance,</text>
+  <text x="32" y="172" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="15" fill="#D9DEE6">study hours, deadlines and workload, then gives</text>
+  <text x="32" y="194" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="15" fill="#D9DEE6">personalised study advice.</text>
+  <rect x="32" y="244" width="107" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="85" y="259" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">scikit-learn</text>
+  <rect x="147" y="244" width="62" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="178" y="259" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">pandas</text>
+  <rect x="217" y="244" width="92" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="263" y="259" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">PostgreSQL</text>
+  <rect x="32" y="274" width="62" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="63" y="289" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">Plotly</text>
+    <text x="462" y="260" text-anchor="end" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#A8D5C2">View repo →</text>
+  </g>
+</svg>

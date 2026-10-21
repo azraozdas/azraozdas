@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="130" viewBox="0 0 1000 130">
+  <defs><linearGradient id="k" x1="0" x2="1"><stop offset="0" stop-color="#2A211C"/><stop offset="1" stop-color="#1C1A22"/></linearGradient></defs>
+  <rect width="1000" height="130" rx="65" fill="url(#k)"/>
+  <rect x=".5" y=".5" width="999" height="129" rx="65" fill="none" stroke="#4A3D33"/>
+  <circle cx="72" cy="65" r="26" fill="#D2B48C" fill-opacity=".15"/>
+  <circle cx="72" cy="65" r="9" fill="#D2B48C"><animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/></circle>
+  <text x="120" y="58" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-style="italic" fill="#F3E9DC">Open to internships and collaboration.</text>
+  <text x="120" y="86" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14.5" fill="#BFB2A3">Currently exploring RAG evaluation and turning ML models into real products.</text>
+  <rect x="790" y="43" width="160" height="44" rx="22" fill="#D2B48C"/>
+  <text x="870" y="71" text-anchor="middle" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#2A211C">Say hello →</text>
+</svg>
