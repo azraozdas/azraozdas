@@ -83,7 +83,7 @@ def section(slug, cmd, title):
     w, h = 1000, 64
     body = f'''    <text x="88" y="35" font-family="{MONO}" font-size="14" fill="#94A3B8">$ {escape(cmd)}</text>
     <text x="{88 + (len(cmd)+3)*8.6:.0f}" y="36" font-family="{SANS}" font-size="19" font-weight="700" fill="#F1F5F9">{escape(title)}</text>
-    <rect x="{88 + (len(cmd)+3)*8.6 + len(title)*10.5:.0f}" y="22" width="9" height="17" fill="#A5B4FC">
+    <rect x="{88 + (len(cmd)+3)*8.6 + len(title)*11.2 + 6:.0f}" y="22" width="9" height="17" fill="#A5B4FC">
       <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/></rect>'''
     svg = shell(w, h, "slate", body, slug).replace('cy="28" r="5"', 'cy="32" r="5"')
     (OUT / f"s-{slug}.svg").write_text(svg)

@@ -17,7 +17,7 @@
     <circle cx="28" cy="32" r="5" fill="#475569"/><circle cx="45" cy="32" r="5" fill="#475569"/><circle cx="62" cy="32" r="5" fill="#475569"/>
     <text x="88" y="35" font-family="Menlo, Consolas, monospace" font-size="14" fill="#94A3B8">$ cat stack.json</text>
     <text x="234" y="36" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#F1F5F9">Tech stack</text>
-    <rect x="339" y="22" width="9" height="17" fill="#A5B4FC">
+    <rect x="352" y="22" width="9" height="17" fill="#A5B4FC">
       <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/></rect>
   </g>
 </svg>
