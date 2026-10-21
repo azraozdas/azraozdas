@@ -104,12 +104,8 @@ Cyberpunk-themed chess game with an **AI opponent**, two-player mode, an opening
 ### 📈 GitHub activity
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=azraozdas&show_icons=true&hide_border=true&bg_color=0D1117&title_color=7F5AF0&icon_color=2CB1BC&text_color=C9D1D9&include_all_commits=true&count_private=true" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=azraozdas&show_icons=true&hide_border=true&bg_color=0D1117&title_color=7F5AF0&icon_color=2CB1BC&text_color=C9D1D9&include_all_commits=true&count_private=true&hide_rank=true" alt="GitHub stats" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=azraozdas&layout=compact&hide_border=true&bg_color=0D1117&title_color=7F5AF0&text_color=C9D1D9&langs_count=6" alt="Top languages" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=azraozdas&bg_color=0D1117&color=C9D1D9&line=7F5AF0&point=F25F8C&area=true&area_color=2CB1BC&hide_border=true" width="100%" alt="Contribution graph" />
 </p>
 
 ---
