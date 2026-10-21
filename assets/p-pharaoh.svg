@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="270" viewBox="0 0 490 270">
+  <defs>
+    <clipPath id="cpharaoh"><rect width="490" height="270" rx="18"/></clipPath>
+    <filter id="bpharaoh" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="45"/></filter>
+    <pattern id="gpharaoh" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#fff" stroke-opacity=".04"/></pattern>
+  </defs>
+  <g clip-path="url(#cpharaoh)">
+    <rect width="490" height="270" fill="#0B1020"/>
+    <g filter="url(#bpharaoh)" opacity=".6">
+      <circle cx="98" cy="20" r="122" fill="#3B3F6B">
+        <animate attributeName="cx" values="98;196;98" dur="14s" repeatCount="indefinite"/></circle>
+      <circle cx="416" cy="270" r="135" fill="#334155">
+        <animate attributeName="cx" values="416;318;416" dur="12s" repeatCount="indefinite"/></circle>
+    </g>
+    <rect width="490" height="270" fill="url(#gpharaoh)"/>
+    <rect x=".5" y=".5" width="489" height="269" rx="18" fill="none" stroke="#fff" stroke-opacity=".12"/>
+    <circle cx="28" cy="28" r="5" fill="#475569"/><circle cx="45" cy="28" r="5" fill="#475569"/><circle cx="62" cy="28" r="5" fill="#475569"/>
+    <text x="466" y="33" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="12" fill="#94A3B8">PharaohMind-RAG</text>
+    <text x="28" y="72" font-family="Menlo, Consolas, monospace" font-size="12.5" fill="#94A3B8">AI · Retrieval-Augmented Generation</text>
+    <text x="28" y="100" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#F1F5F9">PharaohMind RAG</text>
+    <text x="28" y="122" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14.5" fill="#CBD5E1">A chatbot for Ancient Egypt history whose answers are</text>
+    <text x="28" y="143" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14.5" fill="#CBD5E1">grounded in a local knowledge base. It shows the passages</text>
+    <text x="28" y="164" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14.5" fill="#CBD5E1">it retrieved, so every answer can be checked.</text>
+    <rect x="28" y="194" width="85" height="22" rx="6" fill="#fff" fill-opacity=".05" stroke="#fff" stroke-opacity=".14"/><text x="70" y="209" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#CBD5E1">LangChain</text>
+    <rect x="121" y="194" width="77" height="22" rx="6" fill="#fff" fill-opacity=".05" stroke="#fff" stroke-opacity=".14"/><text x="159" y="209" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#CBD5E1">ChromaDB</text>
+    <rect x="206" y="194" width="99" height="22" rx="6" fill="#fff" fill-opacity=".05" stroke="#fff" stroke-opacity=".14"/><text x="256" y="209" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#CBD5E1">HuggingFace</text>
+    <rect x="313" y="194" width="62" height="22" rx="6" fill="#fff" fill-opacity=".05" stroke="#fff" stroke-opacity=".14"/><text x="344" y="209" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#CBD5E1">Ollama</text>
+    <rect x="28" y="224" width="85" height="22" rx="6" fill="#fff" fill-opacity=".05" stroke="#fff" stroke-opacity=".14"/><text x="70" y="239" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#CBD5E1">Streamlit</text>
+  </g>
+</svg>
