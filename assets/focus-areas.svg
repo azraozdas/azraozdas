@@ -4,20 +4,17 @@
   <text x="40" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" fill="#A89BB5">What I work on</text>
   <circle cx="58" cy="98" r="18" fill="#9AA8D6" fill-opacity=".18"/>
   <circle cx="58" cy="98" r="6" fill="#9AA8D6"><animate attributeName="r" values="6;8;6" dur="3s" repeatCount="indefinite"/></circle>
-  <text x="88" y="92" font-family="Menlo, Consolas, monospace" font-size="12" fill="#9AA8D6">01</text>
-  <text x="88" y="112" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#EDE7F2">AI &amp; ML</text>
+  <text x="90" y="105" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#EDE7F2">AI &amp; ML</text>
   <text x="40" y="150" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#B8AFC2">RAG pipelines, local LLMs and</text>
   <text x="40" y="170" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#B8AFC2">ML models that predict outcomes</text>
   <circle cx="373" cy="98" r="18" fill="#9FC2AE" fill-opacity=".18"/>
   <circle cx="373" cy="98" r="6" fill="#9FC2AE"><animate attributeName="r" values="6;8;6" dur="4s" repeatCount="indefinite"/></circle>
-  <text x="403" y="92" font-family="Menlo, Consolas, monospace" font-size="12" fill="#9FC2AE">02</text>
-  <text x="403" y="112" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#EDE7F2">Backend</text>
+  <text x="405" y="105" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#EDE7F2">Backend</text>
   <text x="355" y="150" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#B8AFC2">REST APIs, relational databases,</text>
   <text x="355" y="170" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#B8AFC2">auth and Dockerised services</text>
   <circle cx="688" cy="98" r="18" fill="#D3B496" fill-opacity=".18"/>
   <circle cx="688" cy="98" r="6" fill="#D3B496"><animate attributeName="r" values="6;8;6" dur="5s" repeatCount="indefinite"/></circle>
-  <text x="718" y="92" font-family="Menlo, Consolas, monospace" font-size="12" fill="#D3B496">03</text>
-  <text x="718" y="112" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#EDE7F2">Web &amp; Mobile</text>
+  <text x="720" y="105" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#EDE7F2">Web &amp; Mobile</text>
   <text x="670" y="150" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#B8AFC2">Vue, Streamlit and Flutter</text>
   <text x="670" y="170" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#B8AFC2">interfaces on my own APIs</text>
 </svg>

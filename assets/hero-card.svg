@@ -38,7 +38,7 @@
     <text x="960" y="41" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="13" fill="#94A3B8">~/azraozdas</text>
 
     <g font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">
-      <text x="64" y="118" font-size="17" fill="#94A3B8" font-family="Menlo, Consolas, monospace">$ whoami</text>
+      <text x="64" y="118" font-size="17" fill="#94A3B8" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">Hi, I am</text>
       <text x="62" y="176" font-size="58" font-weight="800" fill="url(#name)" letter-spacing="-1">Azra Özdaş</text>
       <text x="64" y="210" font-size="19" fill="#CBD5E1">Software Engineering Student  ·  AI &amp; Backend Developer</text>
     </g>

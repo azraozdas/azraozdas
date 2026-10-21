@@ -65,11 +65,10 @@ def focus():
         a = accents[i]
         parts.append(f'''  <circle cx="{x+18}" cy="98" r="18" fill="{a}" fill-opacity=".18"/>
   <circle cx="{x+18}" cy="98" r="6" fill="{a}"><animate attributeName="r" values="6;8;6" dur="{3+i}s" repeatCount="indefinite"/></circle>
-  <text x="{x+48}" y="92" font-family="{MONO}" font-size="12" fill="{a}">{num}</text>
-  <text x="{x+48}" y="112" font-family="{SANS}" font-size="20" font-weight="700" fill="#EDE7F2">{escape(title)}</text>
+  <text x="{x+50}" y="105" font-family="{SANS}" font-size="20" font-weight="700" fill="#EDE7F2">{escape(title)}</text>
   <text x="{x}" y="150" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[0])}</text>
   <text x="{x}" y="170" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[1])}</text>''')
-    (OUT / "focus-dark.svg").write_text(svg(w, h, "\n".join(parts)))
+    (OUT / "focus-areas.svg").write_text(svg(w, h, "\n".join(parts)))
 
 
 # 2. two feature cards, each with its own tint --------------------------------

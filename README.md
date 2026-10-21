@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" width="100%" alt="Azra Özdaş — Software Engineering Student, AI & Backend Developer. Open to internships." />
+  <img src="assets/hero-card.svg" width="100%" alt="Azra Özdaş — Software Engineering Student, AI & Backend Developer. Open to internships." />
 </p>
 
 <p align="center">
@@ -8,7 +8,7 @@
   <a href="https://github.com/azraozdas?tab=repositories"><img src="https://img.shields.io/badge/10%2B_projects-334155?style=flat-square&logo=github&logoColor=white&labelColor=0B1020" alt="Projects" /></a>
 </p>
 
-<img src="assets/focus-dark.svg" width="100%" alt="What I work on: AI & ML, Backend, Web & Mobile" />
+<img src="assets/focus-areas.svg" width="100%" alt="What I work on: AI & ML, Backend, Web & Mobile" />
 
 > I build **AI-powered applications end to end**: the retrieval pipeline or ML model in Python, the backend around it, and the interface people actually use.
 > **Looking for:** internship / junior roles in **AI engineering, backend or full-stack development.**
