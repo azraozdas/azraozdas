@@ -8,9 +8,9 @@
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".045"/>
     </pattern>
-    <clipPath id="t0"><rect x="96" y="226" height="30" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" keyTimes="0;.08;.27;.32;1" values="0;470;470;0;0"/></rect></clipPath>
-    <clipPath id="t1"><rect x="96" y="226" height="30" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" keyTimes="0;.333;.413;.6;.653;1" values="0;0;520;520;0;0"/></rect></clipPath>
-    <clipPath id="t2"><rect x="96" y="226" height="30" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" keyTimes="0;.666;.746;.94;.99;1" values="0;0;470;470;0;0"/></rect></clipPath>
+    <clipPath id="t0"><rect x="96" y="234" height="30" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" keyTimes="0;.08;.27;.32;1" values="0;470;470;0;0"/></rect></clipPath>
+    <clipPath id="t1"><rect x="96" y="234" height="30" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" keyTimes="0;.333;.413;.6;.653;1" values="0;0;520;520;0;0"/></rect></clipPath>
+    <clipPath id="t2"><rect x="96" y="234" height="30" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" keyTimes="0;.666;.746;.94;.99;1" values="0;0;470;470;0;0"/></rect></clipPath>
   </defs>
 
   <g clip-path="url(#card)">
@@ -38,20 +38,20 @@
     <text x="960" y="41" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="13" fill="#94A3B8">~/azraozdas</text>
 
     <g font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">
-      <text x="64" y="118" font-size="17" fill="#94A3B8" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">Hi, I am</text>
-      <text x="62" y="176" font-size="58" font-weight="800" fill="url(#name)" letter-spacing="-1">Azra Özdaş</text>
-      <text x="64" y="210" font-size="19" fill="#CBD5E1">Software Engineering Student  ·  AI &amp; Backend Developer</text>
+      <text x="64" y="102" font-size="17" fill="#94A3B8" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">Hi, I am</text>
+      <text x="62" y="168" font-size="58" font-weight="800" fill="url(#name)" letter-spacing="-1">Azra Özdaş</text>
+      <text x="64" y="214" font-size="19" fill="#CBD5E1">Software Engineering Student  ·  AI &amp; Backend Developer</text>
     </g>
 
     <g font-family="Menlo, Consolas, monospace" font-size="17" font-weight="600">
-      <text x="64" y="249" fill="#A5B4FC">&gt;</text>
-      <text x="96" y="249" fill="#CBD5E1" clip-path="url(#t0)">building AI apps that answer real questions</text>
-      <text x="96" y="249" fill="#CBD5E1" clip-path="url(#t1)">RAG chatbots · ML risk prediction · REST APIs</text>
-      <text x="96" y="249" fill="#CBD5E1" clip-path="url(#t2)">Python · Java · TypeScript · Flutter</text>
+      <text x="64" y="256" fill="#A5B4FC">&gt;</text>
+      <text x="96" y="256" fill="#CBD5E1" clip-path="url(#t0)">building AI apps that answer real questions</text>
+      <text x="96" y="256" fill="#CBD5E1" clip-path="url(#t1)">RAG chatbots · ML risk prediction · REST APIs</text>
+      <text x="96" y="256" fill="#CBD5E1" clip-path="url(#t2)">Python · Java · TypeScript · Flutter</text>
     </g>
 
     <!-- status pill -->
-    <g transform="translate(770 96)">
+    <g transform="translate(770 80)">
       <rect width="170" height="34" rx="17" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".18"/>
       <circle cx="20" cy="17" r="4" fill="#86EFAC">
         <animate attributeName="opacity" values="1;.25;1" dur="1.8s" repeatCount="indefinite"/>
