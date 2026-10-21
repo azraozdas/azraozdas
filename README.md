@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg" width="100%" alt="Azra Özdaş — Software Engineering Student, AI & Backend Developer. Open to internships." />
+  <img src="assets/hero.svg" width="100%" alt="Azra Özdaş — Software Engineering Student, AI & Backend Developer. Open to internships." />
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 <sub>REST APIs, relational databases, auth, Dockerised services</sub>
 </td>
 <td width="33%" valign="top" align="center">
-<h3>📱</h3>
+<h3>🌐</h3>
 <b>Web &amp; Mobile</b><br/>
 <sub>Vue, Streamlit and Flutter interfaces on top of my own APIs</sub>
 </td>
@@ -119,7 +119,7 @@ Cyberpunk-themed chess game with a computer opponent, two-player mode, an openin
 |---|---|
 | 🧠 **AI / ML** | LangChain · ChromaDB · HuggingFace · Ollama (Llama 3.2) · scikit-learn · pandas · Streamlit |
 | ⚙️ **Backend** | Python · Java · Node.js · Express · Prisma · PostgreSQL · REST APIs |
-| 📱 **Frontend & Mobile** | Vue 3 · TypeScript · Tailwind CSS · Flutter |
+| 🌐 **Frontend & Mobile** | Vue 3 · TypeScript · Tailwind CSS · Flutter |
 | 🛠 **Systems & DevOps** | C++ · OpenMP · Docker · Docker Compose · Git |
 
 <img src="assets/divider.svg" width="100%" alt="" />
@@ -139,5 +139,5 @@ Cyberpunk-themed chess game with a computer opponent, two-player mode, an openin
 
 <br/>
 <p align="center">
-  <img src="assets/footer.svg" width="100%" alt="Let's build something useful together." />
+  <img src="assets/outro.svg" width="100%" alt="Let's build something useful together." />
 </p>
