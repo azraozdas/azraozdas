@@ -50,7 +50,7 @@ def chips(tags, x, y, max_w, fg, bg, stroke):
 
 # 1. light "paper" card: what I do -------------------------------------------
 def focus():
-    w, h = 1000, 210
+    w, h = 1000, 156
     accents = ["#8FA6FF", "#6FD6AE", "#F2B880"]  # dusty blue, sage, sand
     cols = [
         ("01", "AI & ML", ["RAG pipelines, local LLMs and", "ML models that predict outcomes"]),
@@ -59,16 +59,16 @@ def focus():
     ]
     parts = [f'  <rect width="{w}" height="{h}" rx="20" fill="#1B1530"/>',
              f'  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="20" fill="none" stroke="#2E2836"/>',
-             f'  <text x="40" y="52" font-family="{SERIF}" font-size="15" font-style="italic" fill="#A89BB5">What I work on</text>']
+             f'  <text x="40" y="40" font-family="{SERIF}" font-size="15" font-style="italic" fill="#A89BB5">What I work on</text>']
     for i, (num, title, lines) in enumerate(cols):
         x = 40 + i * 315
         a = accents[i]
-        parts.append(f'''  <circle cx="{x+18}" cy="98" r="18" fill="{a}" fill-opacity=".18"/>
-  <circle cx="{x+18}" cy="98" r="6" fill="{a}"><animate attributeName="r" values="6;8;6" dur="{3+i}s" repeatCount="indefinite"/></circle>
-  <text x="{x+50}" y="105" font-family="{SANS}" font-size="20" font-weight="700" fill="#EDE7F2">{escape(title)}</text>
-  <text x="{x}" y="150" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[0])}</text>
-  <text x="{x}" y="170" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[1])}</text>''')
-    (OUT / "focus-v3.svg").write_text(svg(w, h, "\n".join(parts)))
+        parts.append(f'''  <circle cx="{x+18}" cy="74" r="16" fill="{a}" fill-opacity=".18"/>
+  <circle cx="{x+18}" cy="74" r="6" fill="{a}"><animate attributeName="r" values="6;8;6" dur="{3+i}s" repeatCount="indefinite"/></circle>
+  <text x="{x+50}" y="81" font-family="{SANS}" font-size="19" font-weight="700" fill="#EDE7F2">{escape(title)}</text>
+  <text x="{x}" y="114" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[0])}</text>
+  <text x="{x}" y="133" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[1])}</text>''')
+    (OUT / "focus-v4.svg").write_text(svg(w, h, "\n".join(parts)))
 
 
 # 2. two feature cards, each with its own tint --------------------------------

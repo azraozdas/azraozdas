@@ -8,7 +8,7 @@
   <a href="https://github.com/azraozdas?tab=repositories"><img src="assets/btn-github.svg" width="32%" alt="GitHub: 10+ projects" /></a>
 </p>
 
-<img src="assets/focus-v3.svg" width="100%" alt="What I work on: AI & ML, Backend, Web & Mobile" />
+<img src="assets/focus-v4.svg" width="100%" alt="What I work on: AI & ML, Backend, Web & Mobile" />
 
 > I build **AI-powered applications end to end**: the retrieval pipeline or ML model in Python, the backend around it, and the interface people actually use.
 > **Looking for:** internship / junior roles in **AI engineering, backend or full-stack development.**
