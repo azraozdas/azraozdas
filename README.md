@@ -1,60 +1,82 @@
-<!-- HEADER -->
 <p align="center">
-  <img src="assets/header.svg" width="100%" alt="Azra Özdaş" />
+  <img src="assets/header.svg" width="100%" alt="Azra Özdaş — Software Engineering Student, AI & Backend Developer. Open to internships." />
 </p>
 
 <p align="center">
-  <img src="assets/typing.svg" alt="I build AI apps that answer real questions" />
+  <a href="https://www.linkedin.com/in/azra-ozdas/"><img src="https://img.shields.io/badge/LinkedIn-azra--ozdas-A78BFA?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0B1020" alt="LinkedIn" /></a>
+  <a href="mailto:azraozdas.main@gmail.com"><img src="https://img.shields.io/badge/Email-azraozdas.main-F472B6?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0B1020" alt="Email" /></a>
+  <a href="https://github.com/azraozdas?tab=repositories"><img src="https://img.shields.io/badge/Projects-10+-22D3EE?style=for-the-badge&logo=github&logoColor=white&labelColor=0B1020" alt="Projects" /></a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Open%20to-Internships-2CB1BC?style=for-the-badge" alt="Open to internships" />
-</p>
+<br/>
 
----
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<h3>🧠</h3>
+<b>AI &amp; ML</b><br/>
+<sub>RAG pipelines, local LLMs, ML models that predict real outcomes</sub>
+</td>
+<td width="33%" valign="top" align="center">
+<h3>⚙️</h3>
+<b>Backend</b><br/>
+<sub>REST APIs, relational databases, auth, Dockerised services</sub>
+</td>
+<td width="33%" valign="top" align="center">
+<h3>📱</h3>
+<b>Web &amp; Mobile</b><br/>
+<sub>Vue, Streamlit and Flutter interfaces on top of my own APIs</sub>
+</td>
+</tr>
+</table>
 
-### 👋 In one sentence
+I build **AI-powered applications end to end**: the retrieval pipeline or ML model in Python, the backend around it, and the interface people actually use.
+**Looking for:** internship / junior roles in **AI engineering, backend or full-stack development.**
 
-Software Engineering student who builds **AI-powered applications end to end**: retrieval pipelines and ML models in Python, a REST backend around them, and a web or mobile UI on top.
+<img src="assets/divider.svg" width="100%" alt="" />
 
-**Looking for:** internship / junior roles in **AI engineering, backend or full-stack development**.
-
----
-
-### 🚀 Featured work
+## ✦ Featured work
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-#### 🏺 [PharaohMind RAG](https://github.com/azraozdas/PharaohMind-RAG)
-**Retrieval-Augmented Generation chatbot** for Ancient Egypt history. Answers are grounded in a local knowledge base and the retrieved passages are shown to the user, so every answer can be checked.
+### 🏺 [PharaohMind RAG](https://github.com/azraozdas/PharaohMind-RAG)
+<sub>**AI · Retrieval-Augmented Generation**</sub>
 
-`LangChain` `ChromaDB` `HuggingFace embeddings` `Ollama · Llama 3.2` `Streamlit`
+A chatbot for Ancient Egypt history whose answers are grounded in a local knowledge base. It shows the passages it retrieved, so every answer can be checked.
+
+`LangChain` `ChromaDB` `HuggingFace` `Ollama · Llama 3.2` `Streamlit`
 
 </td>
 <td width="50%" valign="top">
 
-#### 📊 [Studor: Study Risk Predictor](https://github.com/azraozdas/AI_SE04_StudyRiskPredictor)
-**Machine learning app** that predicts a student's academic risk from attendance, study hours, deadlines and workload, then gives personalised study recommendations. Includes auth, dashboard and course management.
+### 📊 [Studor: Study Risk Predictor](https://github.com/azraozdas/AI_SE04_StudyRiskPredictor)
+<sub>**AI · Machine Learning**</sub>
 
-`Python` `scikit-learn` `pandas` `Streamlit` `PostgreSQL` `Plotly`
+Predicts a student's academic risk from attendance, study hours, deadlines and workload, then gives personalised study advice. Auth, dashboard and course management included.
+
+`scikit-learn` `pandas` `Streamlit` `PostgreSQL` `Plotly`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-#### 💹 [Clarivo: Stock Tracker](https://github.com/azraozdas/clarivo) · [Web](https://github.com/azraozdas/Clarivo_Web)
-Fintech-style **mobile + web app**: live demo stock prices, historical charts, portfolio tracking, market news and geolocation, with graceful fallbacks when free API limits are hit.
+### 💹 [Clarivo](https://github.com/azraozdas/clarivo) · [Web](https://github.com/azraozdas/Clarivo_Web)
+<sub>**Mobile + Web · Fintech**</sub>
+
+Stock tracker with live demo prices, historical charts, portfolio tracking, market news and geolocation, with graceful fallbacks when free API limits run out.
 
 `Flutter` `Dart` `REST APIs` `JavaScript`
 
 </td>
 <td width="50%" valign="top">
 
-#### 🛒 [ADE Website](https://github.com/azraozdas/ade-website)
-**Full-stack storefront** with separate frontend and backend services: catalog, cart, checkout, auth and EN/DE localisation. The whole stack starts with one Docker Compose command.
+### 🛒 [ADE Website](https://github.com/azraozdas/ade-website)
+<sub>**Full-stack · E-commerce**</sub>
+
+Storefront with separate frontend and backend services: catalog, cart, checkout, auth and EN/DE localisation. The whole stack starts with one Docker Compose command.
 
 `Vue 3` `TypeScript` `Express` `Prisma` `PostgreSQL` `Docker`
 
@@ -63,16 +85,20 @@ Fintech-style **mobile + web app**: live demo stock prices, historical charts, p
 <tr>
 <td width="50%" valign="top">
 
-#### ⚡ [Parallel PageRank](https://github.com/azraozdas/pagerank)
-Serial vs. **OpenMP-parallel** PageRank on a 4,500-node graph, measuring speedup and verifying both versions produce the same ranks.
+### ⚡ [Parallel PageRank](https://github.com/azraozdas/pagerank)
+<sub>**Systems · Parallel computing**</sub>
+
+Serial vs. OpenMP-parallel PageRank on a 4,500-node graph, measuring speedup and checking that both versions produce the same ranks.
 
 `C++` `OpenMP` `CMake`
 
 </td>
 <td width="50%" valign="top">
 
-#### ♟️ [Chessy](https://github.com/azraozdas/chessy)
-Cyberpunk-themed chess game with an **AI opponent**, two-player mode, an openings learning section, sounds and animations. Team project.
+### ♟️ [Chessy](https://github.com/azraozdas/chessy)
+<sub>**Game · AI opponent**</sub>
+
+Cyberpunk-themed chess game with a computer opponent, two-player mode, an openings learning section, sound and animations. Team project.
 
 `Python` `Pygame` `Game AI`
 
@@ -80,40 +106,38 @@ Cyberpunk-themed chess game with an **AI opponent**, two-player mode, an opening
 </tr>
 </table>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
-### 🧰 Tech stack
+## ✦ Tech stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,ts,js,cpp,dart&theme=dark" alt="Languages" /><br/>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,vue,flutter,prisma,postgres&theme=dark" alt="Frameworks" /><br/>
-  <img src="https://skillicons.dev/icons?i=docker,git,github,linux,vscode&theme=dark" alt="Tools" />
+  <img src="https://skillicons.dev/icons?i=python,java,ts,js,cpp,dart,nodejs,express,vue&theme=dark&perline=9" alt="Languages and frameworks" /><br/>
+  <img src="https://skillicons.dev/icons?i=flutter,prisma,postgres,docker,git,github,linux,vscode&theme=dark&perline=8" alt="Tools" />
 </p>
 
-| Area | Tools |
+| | |
 |---|---|
-| **AI / ML** | LangChain, ChromaDB, HuggingFace, Ollama (Llama 3.2), scikit-learn, pandas, Streamlit |
-| **Backend** | Python, Java, Node.js, Express, Prisma, PostgreSQL, REST APIs |
-| **Frontend & Mobile** | Vue 3, TypeScript, Tailwind CSS, Flutter |
-| **Systems & DevOps** | C++, OpenMP, Docker, Docker Compose, Git |
+| 🧠 **AI / ML** | LangChain · ChromaDB · HuggingFace · Ollama (Llama 3.2) · scikit-learn · pandas · Streamlit |
+| ⚙️ **Backend** | Python · Java · Node.js · Express · Prisma · PostgreSQL · REST APIs |
+| 📱 **Frontend & Mobile** | Vue 3 · TypeScript · Tailwind CSS · Flutter |
+| 🛠 **Systems & DevOps** | C++ · OpenMP · Docker · Docker Compose · Git |
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
-### 📈 GitHub activity
+## ✦ On GitHub
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=azraozdas&show_icons=true&hide_border=true&bg_color=0D1117&title_color=7F5AF0&icon_color=2CB1BC&text_color=C9D1D9&include_all_commits=true&count_private=true&hide_rank=true&hide=stars,prs,issues,contribs" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=azraozdas&layout=compact&hide_border=true&bg_color=0D1117&title_color=7F5AF0&text_color=C9D1D9&langs_count=6" alt="Top languages" />
+  <img height="150" src="https://github-readme-stats.vercel.app/api?username=azraozdas&show_icons=true&hide_border=true&bg_color=0B1020&title_color=C4B5FD&icon_color=22D3EE&text_color=CBD5E1&include_all_commits=true&count_private=true&hide_rank=true&hide=stars,prs,issues,contribs&border_radius=14" alt="GitHub stats" />
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=azraozdas&layout=compact&hide_border=true&bg_color=0B1020&title_color=C4B5FD&text_color=CBD5E1&langs_count=6&border_radius=14" alt="Top languages" />
 </p>
 
----
+## ✦ Right now
 
-### 🌱 Right now
+- 🔍 Going deeper into **RAG evaluation** and running LLMs locally
+- 🚀 Turning ML models into real products with a clean API and UI
+- 🤝 Open to internships and collaboration: [LinkedIn](https://www.linkedin.com/in/azra-ozdas/) · [azraozdas.main@gmail.com](mailto:azraozdas.main@gmail.com)
 
-- Going deeper into **RAG evaluation** and running LLMs locally
-- Turning ML models into real products with a clean API and UI
-- Open to internships and collaboration — say hi 👋
-
+<br/>
 <p align="center">
-  <img src="assets/footer.svg" width="100%" alt="" />
+  <img src="assets/footer.svg" width="100%" alt="Let's build something useful together." />
 </p>
