@@ -5,9 +5,9 @@
   </defs>
   <g clip-path="url(#c)">
     <rect width="1000" height="120" fill="#0B1020"/>
-    <g filter="url(#b)" opacity=".7">
-      <circle cx="200" cy="100" r="90" fill="#7C3AED"><animate attributeName="cx" values="200;420;200" dur="12s" repeatCount="indefinite"/></circle>
-      <circle cx="800" cy="20" r="90" fill="#0891B2"><animate attributeName="cx" values="800;600;800" dur="12s" repeatCount="indefinite"/></circle>
+    <g filter="url(#b)" opacity=".5">
+      <circle cx="200" cy="100" r="90" fill="#334155"><animate attributeName="cx" values="200;420;200" dur="12s" repeatCount="indefinite"/></circle>
+      <circle cx="800" cy="20" r="90" fill="#1E3A5F"><animate attributeName="cx" values="800;600;800" dur="12s" repeatCount="indefinite"/></circle>
     </g>
     <rect x=".5" y=".5" width="999" height="119" rx="22" fill="none" stroke="#fff" stroke-opacity=".12"/>
     <text x="500" y="56" text-anchor="middle" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#F1F5F9">Let's build something useful together.</text>
