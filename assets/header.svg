@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="230" viewBox="0 0 1000 230">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7F5AF0"><animate attributeName="stop-color" values="#7F5AF0;#2CB1BC;#F25F8C;#7F5AF0" dur="10s" repeatCount="indefinite"/></stop>
+      <stop offset="0.5" stop-color="#2CB1BC"><animate attributeName="stop-color" values="#2CB1BC;#F25F8C;#7F5AF0;#2CB1BC" dur="10s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#F25F8C"><animate attributeName="stop-color" values="#F25F8C;#7F5AF0;#2CB1BC;#F25F8C" dur="10s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+  </defs>
+  <path fill="url(#g)" d="M0 0H1000V170C850 230 700 140 500 175C300 210 150 140 0 185Z">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      values="M0 0H1000V170C850 230 700 140 500 175C300 210 150 140 0 185Z;
+              M0 0H1000V185C850 140 700 220 500 180C300 140 150 225 0 170Z;
+              M0 0H1000V170C850 230 700 140 500 175C300 210 150 140 0 185Z"/>
+  </path>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" fill="#fff" text-anchor="middle">
+    <text x="500" y="92" font-size="54" font-weight="700" opacity="0">Azra Özdaş
+      <animate attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze"/></text>
+    <text x="500" y="132" font-size="19" font-weight="500" opacity="0" letter-spacing="1">Software Engineering Student · AI &amp; Backend
+      <animate attributeName="opacity" from="0" to="0.95" begin="0.6s" dur="1.2s" fill="freeze"/></text>
+  </g>
+</svg>

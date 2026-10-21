@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="110" viewBox="0 0 1000 110">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#F25F8C"/><stop offset=".5" stop-color="#2CB1BC"/><stop offset="1" stop-color="#7F5AF0"/></linearGradient></defs>
+  <path fill="url(#g)" d="M0 110V50C200 10 350 80 500 50C650 20 800 80 1000 40V110Z">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 110V50C200 10 350 80 500 50C650 20 800 80 1000 40V110Z;M0 110V40C200 80 350 20 500 55C650 85 800 20 1000 55V110Z;M0 110V50C200 10 350 80 500 50C650 20 800 80 1000 40V110Z"/>
+  </path>
+</svg>

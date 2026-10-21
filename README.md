@@ -1,12 +1,10 @@
 <!-- HEADER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=210&color=0:7F5AF0,50:2CB1BC,100:F25F8C&text=Azra%20%C3%96zda%C5%9F&fontColor=ffffff&fontSize=56&fontAlignY=36&desc=Software%20Engineering%20Student%20%C2%B7%20AI%20%26%20Backend&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="Azra Özdaş" />
+  <img src="assets/header.svg" width="100%" alt="Azra Özdaş" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/azraozdas">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=20&duration=3200&pause=900&color=7F5AF0&center=true&vCenter=true&width=620&lines=I+build+AI+apps+that+answer+real+questions.;RAG+chatbots+%C2%B7+ML+risk+prediction+%C2%B7+REST+APIs;Python+%C2%B7+Java+%C2%B7+TypeScript+%C2%B7+Flutter" alt="What I do" />
-  </a>
+  <img src="assets/typing.svg" alt="I build AI apps that answer real questions" />
 </p>
 
 <p align="center">
@@ -117,5 +115,5 @@ Cyberpunk-themed chess game with an **AI opponent**, two-player mode, an opening
 - Open to internships and collaboration — say hi 👋
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:F25F8C,50:2CB1BC,100:7F5AF0" width="100%" alt="" />
+  <img src="assets/footer.svg" width="100%" alt="" />
 </p>
