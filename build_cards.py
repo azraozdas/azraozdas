@@ -85,8 +85,8 @@ def feature(slug, bg, glow, accent, label, title, desc, tags, number):
     <rect x="32" y="124" width="36" height="3" rx="1.5" fill="{accent}">
       <animate attributeName="width" values="36;64;36" dur="4s" repeatCount="indefinite"/></rect>
 {desc_svg}
-{chips(tags, 32, h - 56, w - 160, "#E7EBF0", "#ffffff14", "#ffffff22")}
-    <text x="{w-28}" y="{h-40}" text-anchor="end" font-family="{SANS}" font-size="13" font-weight="600" fill="{accent}">View repo →</text>
+{chips(tags, 32, h - 72, w - 160, "#E7EBF0", "#ffffff14", "#ffffff22")}
+    <text x="{w-28}" y="{h-56}" text-anchor="end" font-family="{SANS}" font-size="13" font-weight="600" fill="{accent}">View repo →</text>
   </g>'''
     (OUT / f"f-{slug}.svg").write_text(svg(w, h, body))
 

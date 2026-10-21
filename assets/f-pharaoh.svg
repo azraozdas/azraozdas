@@ -16,10 +16,10 @@
   <text x="32" y="150" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="15" fill="#D9DEE6">A chatbot for Ancient Egypt history whose answers are</text>
   <text x="32" y="172" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="15" fill="#D9DEE6">grounded in a local knowledge base. It shows the</text>
   <text x="32" y="194" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="15" fill="#D9DEE6">passages it retrieved, so every answer can be checked.</text>
-  <rect x="32" y="244" width="85" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="74" y="259" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">LangChain</text>
-  <rect x="125" y="244" width="77" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="163" y="259" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">ChromaDB</text>
-  <rect x="210" y="244" width="62" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="241" y="259" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">Ollama</text>
-  <rect x="32" y="274" width="85" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="74" y="289" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">Streamlit</text>
-    <text x="462" y="260" text-anchor="end" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#A9B8E8">View repo →</text>
+  <rect x="32" y="228" width="85" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="74" y="243" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">LangChain</text>
+  <rect x="125" y="228" width="77" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="163" y="243" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">ChromaDB</text>
+  <rect x="210" y="228" width="62" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="241" y="243" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">Ollama</text>
+  <rect x="32" y="258" width="85" height="22" rx="11" fill="#ffffff14" stroke="#ffffff22"/><text x="74" y="273" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#E7EBF0">Streamlit</text>
+    <text x="462" y="244" text-anchor="end" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#A9B8E8">View repo →</text>
   </g>
 </svg>
