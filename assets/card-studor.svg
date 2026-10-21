@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="518" height="218" viewBox="0 0 518 218">
 <g transform="translate(14 14)">
-  <rect width="490" height="190" rx="18" fill="#14211E"/>
-  <rect x=".5" y=".5" width="489" height="189" rx="18" fill="none" stroke="#A8D5C2" stroke-opacity=".25"/>
-  <rect x="0" y="28" width="4" height="40" rx="2" fill="#A8D5C2">
+  <rect width="490" height="190" rx="18" fill="#10261F"/>
+  <rect x=".5" y=".5" width="489" height="189" rx="18" fill="none" stroke="#6FD6AE" stroke-opacity=".4"/>
+  <rect x="0" y="28" width="4" height="40" rx="2" fill="#6FD6AE">
     <animate attributeName="height" values="40;64;40" dur="5s" repeatCount="indefinite"/></rect>
-  <text x="28" y="48" font-family="Menlo, Consolas, monospace" font-size="12" fill="#A8D5C2">AI · Machine Learning</text>
+  <text x="28" y="48" font-family="Menlo, Consolas, monospace" font-size="12" fill="#6FD6AE">AI · Machine Learning</text>
   <text x="28" y="80" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#E3E7EE">Studor</text>
-  <text x="466" y="48" text-anchor="end" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="16" fill="#A8D5C2">↗</text>
+  <text x="466" y="48" text-anchor="end" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="16" fill="#6FD6AE">↗</text>
   <text x="28" y="108" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#C3CAD6">Predicts a student&#x27;s academic risk from attendance,</text>
   <text x="28" y="129" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#C3CAD6">study hours and workload, then gives study advice.</text>
   <text x="28" y="166" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8A93A3">scikit-learn · pandas · Streamlit · PostgreSQL</text>

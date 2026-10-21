@@ -51,13 +51,13 @@ def chips(tags, x, y, max_w, fg, bg, stroke):
 # 1. light "paper" card: what I do -------------------------------------------
 def focus():
     w, h = 1000, 210
-    accents = ["#9AA8D6", "#9FC2AE", "#D3B496"]  # dusty blue, sage, sand
+    accents = ["#8FA6FF", "#6FD6AE", "#F2B880"]  # dusty blue, sage, sand
     cols = [
         ("01", "AI & ML", ["RAG pipelines, local LLMs and", "ML models that predict outcomes"]),
         ("02", "Backend", ["REST APIs, relational databases,", "auth and Dockerised services"]),
         ("03", "Web & Mobile", ["Vue, Streamlit and Flutter", "interfaces on my own APIs"]),
     ]
-    parts = [f'  <rect width="{w}" height="{h}" rx="20" fill="#1A1620"/>',
+    parts = [f'  <rect width="{w}" height="{h}" rx="20" fill="#1B1530"/>',
              f'  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="20" fill="none" stroke="#2E2836"/>',
              f'  <text x="40" y="52" font-family="{SERIF}" font-size="15" font-style="italic" fill="#A89BB5">What I work on</text>']
     for i, (num, title, lines) in enumerate(cols):
@@ -68,7 +68,7 @@ def focus():
   <text x="{x+50}" y="105" font-family="{SANS}" font-size="20" font-weight="700" fill="#EDE7F2">{escape(title)}</text>
   <text x="{x}" y="150" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[0])}</text>
   <text x="{x}" y="170" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[1])}</text>''')
-    (OUT / "focus-areas.svg").write_text(svg(w, h, "\n".join(parts)))
+    (OUT / "focus-v3.svg").write_text(svg(w, h, "\n".join(parts)))
 
 
 # 2. two feature cards, each with its own tint --------------------------------
@@ -79,7 +79,7 @@ def feature(slug, bg, glow, accent, label, title, desc, tags, number):
                          for i, l in enumerate(lines))
     body = f'''  <defs>
     <clipPath id="c{slug}"><rect width="{w}" height="{h}" rx="24"/></clipPath>
-    <radialGradient id="r{slug}" cx="85%" cy="15%" r="70%"><stop offset="0" stop-color="{glow}" stop-opacity=".55"/><stop offset="1" stop-color="{glow}" stop-opacity="0"/></radialGradient>
+    <radialGradient id="r{slug}" cx="85%" cy="15%" r="70%"><stop offset="0" stop-color="{glow}" stop-opacity=".75"/><stop offset="1" stop-color="{glow}" stop-opacity="0"/></radialGradient>
   </defs>
   <g clip-path="url(#c{slug})">
     <rect width="{w}" height="{h}" fill="{bg}"/>
@@ -95,21 +95,21 @@ def feature(slug, bg, glow, accent, label, title, desc, tags, number):
 {chips(tags, 32, h - 72, w - 160, "#E7EBF0", "#ffffff14", "#ffffff22")}
     <text x="{w-28}" y="{h-56}" text-anchor="end" font-family="{SANS}" font-size="13" font-weight="600" fill="{accent}">View repo →</text>
   </g>'''
-    (OUT / f"feature-{slug}.svg").write_text(padded(w, h, body))
+    (OUT / f"feat-{slug}.svg").write_text(padded(w, h, body))
 
 
 # 3. "ls -la" listing for the smaller projects --------------------------------
 def listing():
     rows = [
-        ("clarivo/", "Flutter stock tracker: prices, charts, portfolio, news", "Flutter · Dart", "#7FB3C8"),
-        ("ade-website/", "Full-stack storefront with Docker Compose, EN/DE", "Vue · Express · Prisma", "#9BB89A"),
-        ("pagerank/", "Serial vs OpenMP-parallel PageRank, speedup tests", "C++ · OpenMP", "#C9A3B0"),
-        ("chessy/", "Chess game with AI opponent and openings trainer", "Python · Pygame", "#D2B48C"),
+        ("clarivo/", "Flutter stock tracker: prices, charts, portfolio, news", "Flutter · Dart", "#5CC4E6"),
+        ("ade-website/", "Full-stack storefront with Docker Compose, EN/DE", "Vue · Express · Prisma", "#8FD18B"),
+        ("pagerank/", "Serial vs OpenMP-parallel PageRank, speedup tests", "C++ · OpenMP", "#F08FB0"),
+        ("chessy/", "Chess game with AI opponent and openings trainer", "Python · Pygame", "#F2B880"),
     ]
     w, h = 1000, 70 + len(rows) * 46
     parts = [f'  <rect width="{w}" height="{h}" rx="16" fill="#111418"/>',
              f'  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="16" fill="none" stroke="#2A2F36"/>',
-             f'  <text x="32" y="42" font-family="{MONO}" font-size="14" fill="#7D8590"><tspan fill="#9BB89A">azra@github</tspan>:<tspan fill="#7FB3C8">~/more-projects</tspan>$ ls -la</text>']
+             f'  <text x="32" y="42" font-family="{MONO}" font-size="14" fill="#7D8590"><tspan fill="#8FD18B">azra@github</tspan>:<tspan fill="#5CC4E6">~/more-projects</tspan>$ ls -la</text>']
     for i, (name, desc, stack, color) in enumerate(rows):
         y = 84 + i * 46
         parts.append(f'''  <rect x="20" y="{y-24}" width="{w-40}" height="38" rx="8" fill="#ffffff" fill-opacity="0">
@@ -128,7 +128,7 @@ def mini(slug, bg, accent, label, title, desc, stack):
     desc_svg = "\n".join(f'  <text x="28" y="{108 + i*21}" font-family="{SANS}" font-size="14" fill="#C3CAD6">{escape(l)}</text>'
                          for i, l in enumerate(lines))
     body = f'''  <rect width="{w}" height="{h}" rx="18" fill="{bg}"/>
-  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="18" fill="none" stroke="{accent}" stroke-opacity=".25"/>
+  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="18" fill="none" stroke="{accent}" stroke-opacity=".4"/>
   <rect x="0" y="28" width="4" height="40" rx="2" fill="{accent}">
     <animate attributeName="height" values="40;64;40" dur="5s" repeatCount="indefinite"/></rect>
   <text x="28" y="48" font-family="{MONO}" font-size="12" fill="{accent}">{escape(label)}</text>
@@ -136,19 +136,19 @@ def mini(slug, bg, accent, label, title, desc, stack):
   <text x="{w-24}" y="48" text-anchor="end" font-family="{SANS}" font-size="16" fill="{accent}">↗</text>
 {desc_svg}
   <text x="28" y="{h-24}" font-family="{MONO}" font-size="12" fill="#8A93A3">{escape(stack)}</text>'''
-    (OUT / f"m-{slug}.svg").write_text(padded(w, h, body))
+    (OUT / f"card-{slug}.svg").write_text(padded(w, h, body))
 
 
 # 3c. large contact buttons under the banner ---------------------------------
 def link_button(slug, label, value, accent):
-    w, h = 310, 64
-    body = f'''  <rect width="{w}" height="{h}" rx="32" fill="#141A26"/>
-  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="32" fill="none" stroke="{accent}" stroke-opacity=".35"/>
-  <circle cx="34" cy="32" r="14" fill="{accent}" fill-opacity=".18"/>
-  <circle cx="34" cy="32" r="5" fill="{accent}"/>
-  <text x="60" y="27" font-family="{SANS}" font-size="12.5" fill="#8A93A3">{escape(label)}</text>
-  <text x="60" y="46" font-family="{SANS}" font-size="16.5" font-weight="600" fill="#E3E7EE">{escape(value)}</text>'''
-    (OUT / f"link-{slug}.svg").write_text(padded(w, h, body))
+    w, h = 310, 76
+    body = f'''  <rect width="{w}" height="{h}" rx="38" fill="#141A26"/>
+  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="38" fill="none" stroke="{accent}" stroke-opacity=".35"/>
+  <circle cx="36" cy="38" r="16" fill="{accent}" fill-opacity=".18"/>
+  <circle cx="36" cy="38" r="6" fill="{accent}"/>
+  <text x="64" y="30" font-family="{SANS}" font-size="14.5" fill="{accent}">{escape(label)}</text>
+  <text x="64" y="56" font-family="{SANS}" font-size="17" font-weight="600" fill="#E3E7EE">{escape(value)}</text>'''
+    (OUT / f"btn-{slug}.svg").write_text(padded(w, h, body))
 
 
 # 4. warm contact strip -------------------------------------------------------
@@ -157,42 +157,42 @@ def contact():
     body = f'''  <defs><linearGradient id="k" x1="0" x2="1"><stop offset="0" stop-color="#2A211C"/><stop offset="1" stop-color="#1C1A22"/></linearGradient></defs>
   <rect width="{w}" height="{h}" rx="65" fill="url(#k)"/>
   <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="65" fill="none" stroke="#4A3D33"/>
-  <circle cx="72" cy="65" r="26" fill="#D2B48C" fill-opacity=".15"/>
-  <circle cx="72" cy="65" r="9" fill="#D2B48C"><animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/></circle>
+  <circle cx="72" cy="65" r="26" fill="#F2B880" fill-opacity=".15"/>
+  <circle cx="72" cy="65" r="9" fill="#F2B880"><animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/></circle>
   <text x="120" y="58" font-family="{SERIF}" font-size="24" font-style="italic" fill="#F3E9DC">Open to internships and collaboration.</text>
   <text x="120" y="86" font-family="{SANS}" font-size="14.5" fill="#BFB2A3">Currently exploring RAG evaluation and turning ML models into real products.</text>
-  <rect x="{w-210}" y="43" width="160" height="44" rx="22" fill="#D2B48C"/>
+  <rect x="{w-210}" y="43" width="160" height="44" rx="22" fill="#F2B880"/>
   <text x="{w-130}" y="71" text-anchor="middle" font-family="{SANS}" font-size="15" font-weight="700" fill="#2A211C">Say hello →</text>'''
-    (OUT / "hello.svg").write_text(svg(w, h, body))
+    (OUT / "contact-v3.svg").write_text(svg(w, h, body))
 
 
 if __name__ == "__main__":
     focus()
-    feature("pharaoh", "#141B2D", "#5B6FB0", "#A9B8E8", "AI · RAG", "PharaohMind RAG",
+    feature("pharaoh", "#131B3A", "#4F6BE0", "#9FB4FF", "AI · RAG", "PharaohMind RAG",
             "A chatbot for Ancient Egypt history whose answers are grounded in a local knowledge base. It shows the passages it retrieved, so every answer can be checked.",
             ["LangChain", "ChromaDB", "Ollama", "Streamlit"], "01")
-    feature("ade-website", "#1E1A14", "#9C7B4E", "#E0C49A", "Full-stack · E-commerce", "ADE Website",
+    feature("ade-website", "#261C10", "#C98A3E", "#F5C98A", "Full-stack · E-commerce", "ADE Website",
             "Storefront with separate frontend and backend: catalog, cart, checkout, auth and EN/DE. The whole stack runs with one Docker Compose command.",
             ["Vue 3", "TypeScript", "Express", "Prisma", "PostgreSQL", "Docker"], "02")
-    mini("studor", "#14211E", "#A8D5C2", "AI · Machine Learning", "Studor",
+    mini("studor", "#10261F", "#6FD6AE", "AI · Machine Learning", "Studor",
          "Predicts a student's academic risk from attendance, study hours and workload, then gives study advice.",
          "scikit-learn · pandas · Streamlit · PostgreSQL")
-    mini("clarivo", "#122029", "#7FB3C8", "Mobile · Fintech", "Clarivo",
+    mini("clarivo", "#0F2433", "#5CC4E6", "Mobile · Fintech", "Clarivo",
          "Flutter stock tracker with demo prices, historical charts, portfolio tracking and market news.",
          "Flutter · Dart · REST APIs")
-    mini("clarivoweb", "#1B1A26", "#A9A3D6", "Web · Fintech", "Clarivo Web",
+    mini("clarivoweb", "#1C1A33", "#A99BFF", "Web · Fintech", "Clarivo Web",
          "Web version of Clarivo: market, portfolio, news and stock detail pages with Chart.js charts.",
          "JavaScript · HTML · CSS")
-    mini("pagerank", "#241A20", "#C9A3B0", "Systems · Parallel", "Parallel PageRank",
+    mini("pagerank", "#2B1724", "#F08FB0", "Systems · Parallel", "Parallel PageRank",
          "Serial vs OpenMP-parallel PageRank on a 4,500-node graph, with speedup and correctness checks.",
          "C++ · OpenMP · CMake")
-    mini("chessy", "#241F16", "#D2B48C", "Game · AI opponent", "Chessy",
+    mini("chessy", "#2B2113", "#F2B880", "Game · AI opponent", "Chessy",
          "Cyberpunk chess game with a computer opponent, two-player mode and an openings trainer.",
          "Python · Pygame")
-    mini("calc", "#1A2224", "#8FB9B5", "Desktop · Java", "Scientific Calculator",
+    mini("calc", "#12272A", "#6CCFC4", "Desktop · Java", "Scientific Calculator",
          "Java Swing scientific calculator with memory and calculation history.",
          "Java · Swing")
     contact()
-    link_button("linkedin", "LinkedIn", "in/azra-ozdas", "#9AA8D6")
-    link_button("email", "Email", "azraozdas.main@gmail.com", "#D3B496")
-    link_button("github", "GitHub", "10+ projects", "#9FC2AE")
+    link_button("linkedin", "LinkedIn", "in/azra-ozdas", "#8FA6FF")
+    link_button("email", "Email", "azraozdas.main@gmail.com", "#F2B880")
+    link_button("github", "GitHub", "10+ projects", "#6FD6AE")

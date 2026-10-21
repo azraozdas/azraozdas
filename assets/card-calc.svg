@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="518" height="218" viewBox="0 0 518 218">
 <g transform="translate(14 14)">
-  <rect width="490" height="190" rx="18" fill="#1A2224"/>
-  <rect x=".5" y=".5" width="489" height="189" rx="18" fill="none" stroke="#8FB9B5" stroke-opacity=".25"/>
-  <rect x="0" y="28" width="4" height="40" rx="2" fill="#8FB9B5">
+  <rect width="490" height="190" rx="18" fill="#12272A"/>
+  <rect x=".5" y=".5" width="489" height="189" rx="18" fill="none" stroke="#6CCFC4" stroke-opacity=".4"/>
+  <rect x="0" y="28" width="4" height="40" rx="2" fill="#6CCFC4">
     <animate attributeName="height" values="40;64;40" dur="5s" repeatCount="indefinite"/></rect>
-  <text x="28" y="48" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8FB9B5">Desktop · Java</text>
+  <text x="28" y="48" font-family="Menlo, Consolas, monospace" font-size="12" fill="#6CCFC4">Desktop · Java</text>
   <text x="28" y="80" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#E3E7EE">Scientific Calculator</text>
-  <text x="466" y="48" text-anchor="end" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="16" fill="#8FB9B5">↗</text>
+  <text x="466" y="48" text-anchor="end" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="16" fill="#6CCFC4">↗</text>
   <text x="28" y="108" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#C3CAD6">Java Swing scientific calculator with memory and</text>
   <text x="28" y="129" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#C3CAD6">calculation history.</text>
   <text x="28" y="166" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8A93A3">Java · Swing</text>

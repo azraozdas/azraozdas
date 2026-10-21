@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="518" height="218" viewBox="0 0 518 218">
 <g transform="translate(14 14)">
-  <rect width="490" height="190" rx="18" fill="#241A20"/>
-  <rect x=".5" y=".5" width="489" height="189" rx="18" fill="none" stroke="#C9A3B0" stroke-opacity=".25"/>
-  <rect x="0" y="28" width="4" height="40" rx="2" fill="#C9A3B0">
+  <rect width="490" height="190" rx="18" fill="#2B1724"/>
+  <rect x=".5" y=".5" width="489" height="189" rx="18" fill="none" stroke="#F08FB0" stroke-opacity=".4"/>
+  <rect x="0" y="28" width="4" height="40" rx="2" fill="#F08FB0">
     <animate attributeName="height" values="40;64;40" dur="5s" repeatCount="indefinite"/></rect>
-  <text x="28" y="48" font-family="Menlo, Consolas, monospace" font-size="12" fill="#C9A3B0">Systems · Parallel</text>
+  <text x="28" y="48" font-family="Menlo, Consolas, monospace" font-size="12" fill="#F08FB0">Systems · Parallel</text>
   <text x="28" y="80" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#E3E7EE">Parallel PageRank</text>
-  <text x="466" y="48" text-anchor="end" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="16" fill="#C9A3B0">↗</text>
+  <text x="466" y="48" text-anchor="end" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="16" fill="#F08FB0">↗</text>
   <text x="28" y="108" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#C3CAD6">Serial vs OpenMP-parallel PageRank on a 4,500-node</text>
   <text x="28" y="129" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#C3CAD6">graph, with speedup and correctness checks.</text>
   <text x="28" y="166" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8A93A3">C++ · OpenMP · CMake</text>

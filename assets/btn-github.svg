@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="338" height="104" viewBox="0 0 338 104">
+<g transform="translate(14 14)">
+  <rect width="310" height="76" rx="38" fill="#141A26"/>
+  <rect x=".5" y=".5" width="309" height="75" rx="38" fill="none" stroke="#6FD6AE" stroke-opacity=".35"/>
+  <circle cx="36" cy="38" r="16" fill="#6FD6AE" fill-opacity=".18"/>
+  <circle cx="36" cy="38" r="6" fill="#6FD6AE"/>
+  <text x="64" y="30" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14.5" fill="#6FD6AE">GitHub</text>
+  <text x="64" y="56" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#E3E7EE">10+ projects</text>
+</g>
+</svg>
