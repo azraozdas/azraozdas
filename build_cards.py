@@ -160,18 +160,18 @@ if __name__ == "__main__":
     feature("pharaoh", "#141B2D", "#5B6FB0", "#A9B8E8", "AI · RAG", "PharaohMind RAG",
             "A chatbot for Ancient Egypt history whose answers are grounded in a local knowledge base. It shows the passages it retrieved, so every answer can be checked.",
             ["LangChain", "ChromaDB", "Ollama", "Streamlit"], "01")
-    feature("studor", "#14211E", "#4E8A78", "#A8D5C2", "AI · Machine Learning", "Studor",
-            "Predicts a student's academic risk from attendance, study hours, deadlines and workload, then gives personalised study advice.",
-            ["scikit-learn", "pandas", "PostgreSQL", "Plotly"], "02")
+    feature("ade", "#1E1A14", "#9C7B4E", "#E0C49A", "Full-stack · E-commerce", "ADE Website",
+            "Storefront with separate frontend and backend services: catalog, cart, checkout, auth and EN/DE localisation. The whole stack starts with one Docker Compose command.",
+            ["Vue 3", "TypeScript", "Express", "Prisma", "PostgreSQL", "Docker"], "02")
+    mini("studor", "#14211E", "#A8D5C2", "AI · Machine Learning", "Studor",
+         "Predicts a student's academic risk from attendance, study hours and workload, then gives study advice.",
+         "scikit-learn · pandas · Streamlit · PostgreSQL")
     mini("clarivo", "#122029", "#7FB3C8", "Mobile · Fintech", "Clarivo",
          "Flutter stock tracker with demo prices, historical charts, portfolio tracking and market news.",
          "Flutter · Dart · REST APIs")
     mini("clarivoweb", "#1B1A26", "#A9A3D6", "Web · Fintech", "Clarivo Web",
          "Web version of Clarivo: market, portfolio, news and stock detail pages with Chart.js charts.",
          "JavaScript · HTML · CSS")
-    mini("ade", "#15201A", "#9BB89A", "Full-stack · E-commerce", "ADE Website",
-         "Storefront with cart, checkout, auth and EN/DE localisation, started with one Docker Compose command.",
-         "Vue 3 · Express · Prisma · PostgreSQL")
     mini("pagerank", "#241A20", "#C9A3B0", "Systems · Parallel", "Parallel PageRank",
          "Serial vs OpenMP-parallel PageRank on a 4,500-node graph, with speedup and correctness checks.",
          "C++ · OpenMP · CMake")
