@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="https://github.com/azraozdas/PharaohMind-RAG"><img src="assets/feature-pharaoh.svg" width="49%" alt="PharaohMind RAG: RAG chatbot for Ancient Egypt history" /></a>
-  <a href="https://github.com/azraozdas/ade-website"><img src="assets/feature-ade.svg" width="49%" alt="ADE Website: full-stack storefront (Vue 3, Express, Prisma, PostgreSQL, Docker)" /></a>
+  <a href="https://github.com/azraozdas/ade-website"><img src="assets/feature-ade-website.svg" width="49%" alt="ADE Website: full-stack storefront (Vue 3, Express, Prisma, PostgreSQL, Docker)" /></a>
 </p>
 
 ### More projects

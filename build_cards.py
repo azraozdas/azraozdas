@@ -159,7 +159,7 @@ if __name__ == "__main__":
     feature("pharaoh", "#141B2D", "#5B6FB0", "#A9B8E8", "AI · RAG", "PharaohMind RAG",
             "A chatbot for Ancient Egypt history whose answers are grounded in a local knowledge base. It shows the passages it retrieved, so every answer can be checked.",
             ["LangChain", "ChromaDB", "Ollama", "Streamlit"], "01")
-    feature("ade", "#1E1A14", "#9C7B4E", "#E0C49A", "Full-stack · E-commerce", "ADE Website",
+    feature("ade-website", "#1E1A14", "#9C7B4E", "#E0C49A", "Full-stack · E-commerce", "ADE Website",
             "Storefront with separate frontend and backend: catalog, cart, checkout, auth and EN/DE. The whole stack runs with one Docker Compose command.",
             ["Vue 3", "TypeScript", "Express", "Prisma", "PostgreSQL", "Docker"], "02")
     mini("studor", "#14211E", "#A8D5C2", "AI · Machine Learning", "Studor",
