@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/azra-ozdas/"><img src="https://img.shields.io/badge/azra--ozdas-334155?style=flat-square&logo=linkedin&logoColor=white&labelColor=0B1020" alt="LinkedIn" /></a>
+  <a href="https://www.linkedin.com/in/azra-ozdas/"><img src="https://img.shields.io/badge/LinkedIn-azra--ozdas-334155?style=flat-square&labelColor=0B1020" alt="LinkedIn" /></a>
   <a href="mailto:azraozdas.main@gmail.com"><img src="https://img.shields.io/badge/azraozdas.main%40gmail.com-334155?style=flat-square&logo=gmail&logoColor=white&labelColor=0B1020" alt="Email" /></a>
   <a href="https://github.com/azraozdas?tab=repositories"><img src="https://img.shields.io/badge/10%2B_projects-334155?style=flat-square&logo=github&logoColor=white&labelColor=0B1020" alt="Projects" /></a>
 </p>
