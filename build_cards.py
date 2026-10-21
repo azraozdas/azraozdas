@@ -69,7 +69,7 @@ def focus():
   <text x="{x+48}" y="112" font-family="{SANS}" font-size="20" font-weight="700" fill="#EDE7F2">{escape(title)}</text>
   <text x="{x}" y="150" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[0])}</text>
   <text x="{x}" y="170" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[1])}</text>''')
-    (OUT / "what.svg").write_text(svg(w, h, "\n".join(parts)))
+    (OUT / "focus-dark.svg").write_text(svg(w, h, "\n".join(parts)))
 
 
 # 2. two feature cards, each with its own tint --------------------------------
@@ -96,7 +96,7 @@ def feature(slug, bg, glow, accent, label, title, desc, tags, number):
 {chips(tags, 32, h - 72, w - 160, "#E7EBF0", "#ffffff14", "#ffffff22")}
     <text x="{w-28}" y="{h-56}" text-anchor="end" font-family="{SANS}" font-size="13" font-weight="600" fill="{accent}">View repo →</text>
   </g>'''
-    (OUT / f"f-{slug}.svg").write_text(padded(w, h, body))
+    (OUT / f"feature-{slug}.svg").write_text(padded(w, h, body))
 
 
 # 3. "ls -la" listing for the smaller projects --------------------------------

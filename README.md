@@ -8,7 +8,7 @@
   <a href="https://github.com/azraozdas?tab=repositories"><img src="https://img.shields.io/badge/10%2B_projects-334155?style=flat-square&logo=github&logoColor=white&labelColor=0B1020" alt="Projects" /></a>
 </p>
 
-<img src="assets/what.svg?v=2" width="100%" alt="What I work on: AI & ML, Backend, Web & Mobile" />
+<img src="assets/focus-dark.svg" width="100%" alt="What I work on: AI & ML, Backend, Web & Mobile" />
 
 > I build **AI-powered applications end to end**: the retrieval pipeline or ML model in Python, the backend around it, and the interface people actually use.
 > **Looking for:** internship / junior roles in **AI engineering, backend or full-stack development.**
@@ -16,8 +16,8 @@
 ## Featured work
 
 <p align="center">
-  <a href="https://github.com/azraozdas/PharaohMind-RAG"><img src="assets/f-pharaoh.svg?v=2" width="49%" alt="PharaohMind RAG: RAG chatbot for Ancient Egypt history" /></a>
-  <a href="https://github.com/azraozdas/AI_SE04_StudyRiskPredictor"><img src="assets/f-studor.svg?v=2" width="49%" alt="Studor: ML academic risk predictor" /></a>
+  <a href="https://github.com/azraozdas/PharaohMind-RAG"><img src="assets/feature-pharaoh.svg" width="49%" alt="PharaohMind RAG: RAG chatbot for Ancient Egypt history" /></a>
+  <a href="https://github.com/azraozdas/AI_SE04_StudyRiskPredictor"><img src="assets/feature-studor.svg" width="49%" alt="Studor: ML academic risk predictor" /></a>
 </p>
 
 ### More projects
