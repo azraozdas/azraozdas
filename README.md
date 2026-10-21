@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Azra Özdaş — Software Engineering Student, AI & Backend Developer. Open to internships." />
+  <img src="assets/hero-v2.svg" width="100%" alt="Azra Özdaş — Software Engineering Student, AI & Backend Developer. Open to internships." />
 </p>
 
 <p align="center">

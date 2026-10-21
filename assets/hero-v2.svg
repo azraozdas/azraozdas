@@ -3,7 +3,7 @@
     <clipPath id="card"><rect width="1000" height="300" rx="22"/></clipPath>
     <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="55"/></filter>
     <linearGradient id="name" x1="0" x2="1">
-      <stop offset="0" stop-color="#F1F5F9"/><stop offset=".5" stop-color="#E2E8F0"/><stop offset="1" stop-color="#C7D2FE"/>
+      <stop offset="0" stop-color="#F8FAFC"/><stop offset=".5" stop-color="#E0E7FF"/><stop offset="1" stop-color="#A5B4FC"/>
     </linearGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".045"/>
@@ -38,16 +38,16 @@
     <text x="960" y="41" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="13" fill="#94A3B8">~/azraozdas</text>
 
     <g font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">
-      <text x="64" y="102" font-size="17" fill="#94A3B8" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">Hi, I am</text>
+      <text x="64" y="102" font-size="17" fill="#7F8BA3" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">Hi, I am</text>
       <text x="62" y="168" font-size="58" font-weight="800" fill="url(#name)" letter-spacing="-1">Azra Özdaş</text>
-      <text x="64" y="214" font-size="19" fill="#CBD5E1">Software Engineering Student  ·  AI &amp; Backend Developer</text>
+      <text x="64" y="214" font-size="19" fill="#9DB4D3">Software Engineering Student  ·  AI &amp; Backend Developer</text>
     </g>
 
     <g font-family="Menlo, Consolas, monospace" font-size="17" font-weight="600">
-      <text x="64" y="256" fill="#A5B4FC">&gt;</text>
-      <text x="96" y="256" fill="#CBD5E1" clip-path="url(#t0)">building AI apps that answer real questions</text>
-      <text x="96" y="256" fill="#CBD5E1" clip-path="url(#t1)">RAG chatbots · ML risk prediction · REST APIs</text>
-      <text x="96" y="256" fill="#CBD5E1" clip-path="url(#t2)">Python · Java · TypeScript · Flutter</text>
+      <text x="64" y="256" fill="#D3B496">&gt;</text>
+      <text x="96" y="256" fill="#8FCFC4" clip-path="url(#t0)">building AI apps that answer real questions</text>
+      <text x="96" y="256" fill="#8FCFC4" clip-path="url(#t1)">RAG chatbots · ML risk prediction · REST APIs</text>
+      <text x="96" y="256" fill="#8FCFC4" clip-path="url(#t2)">Python · Java · TypeScript · Flutter</text>
     </g>
 
     <!-- status pill -->
