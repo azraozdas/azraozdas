@@ -139,6 +139,18 @@ def mini(slug, bg, accent, label, title, desc, stack):
     (OUT / f"m-{slug}.svg").write_text(padded(w, h, body))
 
 
+# 3c. large contact buttons under the banner ---------------------------------
+def link_button(slug, label, value, accent):
+    w, h = 310, 64
+    body = f'''  <rect width="{w}" height="{h}" rx="32" fill="#141A26"/>
+  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="32" fill="none" stroke="{accent}" stroke-opacity=".35"/>
+  <circle cx="34" cy="32" r="14" fill="{accent}" fill-opacity=".18"/>
+  <circle cx="34" cy="32" r="5" fill="{accent}"/>
+  <text x="60" y="27" font-family="{SANS}" font-size="12.5" fill="#8A93A3">{escape(label)}</text>
+  <text x="60" y="46" font-family="{SANS}" font-size="16.5" font-weight="600" fill="#E3E7EE">{escape(value)}</text>'''
+    (OUT / f"link-{slug}.svg").write_text(padded(w, h, body))
+
+
 # 4. warm contact strip -------------------------------------------------------
 def contact():
     w, h = 1000, 130
@@ -181,3 +193,6 @@ if __name__ == "__main__":
          "Java Swing scientific calculator with memory and calculation history.",
          "Java · Swing")
     contact()
+    link_button("linkedin", "LinkedIn", "in/azra-ozdas", "#9AA8D6")
+    link_button("email", "Email", "azraozdas.main@gmail.com", "#D3B496")
+    link_button("github", "GitHub", "10+ projects", "#9FC2AE")
