@@ -17,6 +17,14 @@ def svg(w, h, body):
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">\n{body}\n</svg>\n'
 
 
+PAD = 14
+
+
+def padded(w, h, body):
+    """Card with transparent margin so cards placed side by side never touch."""
+    return svg(w + 2 * PAD, h + 2 * PAD, f'<g transform="translate({PAD} {PAD})">\n{body}\n</g>')
+
+
 def wrap(text, width):
     lines, cur = [], ""
     for word in text.split():
@@ -43,24 +51,24 @@ def chips(tags, x, y, max_w, fg, bg, stroke):
 # 1. light "paper" card: what I do -------------------------------------------
 def focus():
     w, h = 1000, 210
-    accents = ["#7C8DB5", "#8FA89A", "#B59A86"]  # dusty blue, sage, sand
+    accents = ["#9AA8D6", "#9FC2AE", "#D3B496"]  # dusty blue, sage, sand
     cols = [
         ("01", "AI & ML", ["RAG pipelines, local LLMs and", "ML models that predict outcomes"]),
         ("02", "Backend", ["REST APIs, relational databases,", "auth and Dockerised services"]),
         ("03", "Web & Mobile", ["Vue, Streamlit and Flutter", "interfaces on my own APIs"]),
     ]
-    parts = [f'  <rect width="{w}" height="{h}" rx="20" fill="#F6F3EE"/>',
-             f'  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="20" fill="none" stroke="#E4DED4"/>',
-             f'  <text x="40" y="52" font-family="{SERIF}" font-size="15" font-style="italic" fill="#8A8173">What I work on</text>']
+    parts = [f'  <rect width="{w}" height="{h}" rx="20" fill="#1A1620"/>',
+             f'  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="20" fill="none" stroke="#2E2836"/>',
+             f'  <text x="40" y="52" font-family="{SERIF}" font-size="15" font-style="italic" fill="#A89BB5">What I work on</text>']
     for i, (num, title, lines) in enumerate(cols):
         x = 40 + i * 315
         a = accents[i]
         parts.append(f'''  <circle cx="{x+18}" cy="98" r="18" fill="{a}" fill-opacity=".18"/>
   <circle cx="{x+18}" cy="98" r="6" fill="{a}"><animate attributeName="r" values="6;8;6" dur="{3+i}s" repeatCount="indefinite"/></circle>
   <text x="{x+48}" y="92" font-family="{MONO}" font-size="12" fill="{a}">{num}</text>
-  <text x="{x+48}" y="112" font-family="{SANS}" font-size="20" font-weight="700" fill="#2B2A28">{escape(title)}</text>
-  <text x="{x}" y="150" font-family="{SANS}" font-size="14" fill="#5C574F">{escape(lines[0])}</text>
-  <text x="{x}" y="170" font-family="{SANS}" font-size="14" fill="#5C574F">{escape(lines[1])}</text>''')
+  <text x="{x+48}" y="112" font-family="{SANS}" font-size="20" font-weight="700" fill="#EDE7F2">{escape(title)}</text>
+  <text x="{x}" y="150" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[0])}</text>
+  <text x="{x}" y="170" font-family="{SANS}" font-size="14" fill="#B8AFC2">{escape(lines[1])}</text>''')
     (OUT / "what.svg").write_text(svg(w, h, "\n".join(parts)))
 
 
@@ -81,14 +89,14 @@ def feature(slug, bg, glow, accent, label, title, desc, tags, number):
     <text x="{w-28}" y="96" text-anchor="end" font-family="{SERIF}" font-size="96" font-weight="700" fill="#fff" fill-opacity=".06">{number}</text>
     <rect x="32" y="36" width="{len(label)*7.3+24:.0f}" height="24" rx="12" fill="{accent}" fill-opacity=".16"/>
     <text x="44" y="52" font-family="{MONO}" font-size="12" fill="{accent}">{escape(label)}</text>
-    <text x="32" y="112" font-family="{SANS}" font-size="28" font-weight="800" fill="#FFFFFF">{escape(title)}</text>
+    <text x="32" y="112" font-family="{SANS}" font-size="28" font-weight="800" fill="#E8ECF4">{escape(title)}</text>
     <rect x="32" y="124" width="36" height="3" rx="1.5" fill="{accent}">
       <animate attributeName="width" values="36;64;36" dur="4s" repeatCount="indefinite"/></rect>
 {desc_svg}
 {chips(tags, 32, h - 72, w - 160, "#E7EBF0", "#ffffff14", "#ffffff22")}
     <text x="{w-28}" y="{h-56}" text-anchor="end" font-family="{SANS}" font-size="13" font-weight="600" fill="{accent}">View repo →</text>
   </g>'''
-    (OUT / f"f-{slug}.svg").write_text(svg(w, h, body))
+    (OUT / f"f-{slug}.svg").write_text(padded(w, h, body))
 
 
 # 3. "ls -la" listing for the smaller projects --------------------------------
@@ -114,6 +122,24 @@ def listing():
     (OUT / "more.svg").write_text(svg(w, h, "\n".join(parts)))
 
 
+# 3b. smaller clickable cards for the other repos ---------------------------
+def mini(slug, bg, accent, label, title, desc, stack):
+    w, h = 490, 190
+    lines = wrap(desc, 56)
+    desc_svg = "\n".join(f'  <text x="28" y="{108 + i*21}" font-family="{SANS}" font-size="14" fill="#C3CAD6">{escape(l)}</text>'
+                         for i, l in enumerate(lines))
+    body = f'''  <rect width="{w}" height="{h}" rx="18" fill="{bg}"/>
+  <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="18" fill="none" stroke="{accent}" stroke-opacity=".25"/>
+  <rect x="0" y="28" width="4" height="40" rx="2" fill="{accent}">
+    <animate attributeName="height" values="40;64;40" dur="5s" repeatCount="indefinite"/></rect>
+  <text x="28" y="48" font-family="{MONO}" font-size="12" fill="{accent}">{escape(label)}</text>
+  <text x="28" y="80" font-family="{SANS}" font-size="22" font-weight="700" fill="#E3E7EE">{escape(title)}</text>
+  <text x="{w-24}" y="48" text-anchor="end" font-family="{SANS}" font-size="16" fill="{accent}">↗</text>
+{desc_svg}
+  <text x="28" y="{h-24}" font-family="{MONO}" font-size="12" fill="#8A93A3">{escape(stack)}</text>'''
+    (OUT / f"m-{slug}.svg").write_text(padded(w, h, body))
+
+
 # 4. warm contact strip -------------------------------------------------------
 def contact():
     w, h = 1000, 130
@@ -137,5 +163,22 @@ if __name__ == "__main__":
     feature("studor", "#14211E", "#4E8A78", "#A8D5C2", "AI · Machine Learning", "Studor",
             "Predicts a student's academic risk from attendance, study hours, deadlines and workload, then gives personalised study advice.",
             ["scikit-learn", "pandas", "PostgreSQL", "Plotly"], "02")
-    listing()
+    mini("clarivo", "#122029", "#7FB3C8", "Mobile · Fintech", "Clarivo",
+         "Flutter stock tracker with demo prices, historical charts, portfolio tracking and market news.",
+         "Flutter · Dart · REST APIs")
+    mini("clarivoweb", "#1B1A26", "#A9A3D6", "Web · Fintech", "Clarivo Web",
+         "Web version of Clarivo: market, portfolio, news and stock detail pages with Chart.js charts.",
+         "JavaScript · HTML · CSS")
+    mini("ade", "#15201A", "#9BB89A", "Full-stack · E-commerce", "ADE Website",
+         "Storefront with cart, checkout, auth and EN/DE localisation, started with one Docker Compose command.",
+         "Vue 3 · Express · Prisma · PostgreSQL")
+    mini("pagerank", "#241A20", "#C9A3B0", "Systems · Parallel", "Parallel PageRank",
+         "Serial vs OpenMP-parallel PageRank on a 4,500-node graph, with speedup and correctness checks.",
+         "C++ · OpenMP · CMake")
+    mini("chessy", "#241F16", "#D2B48C", "Game · AI opponent", "Chessy",
+         "Cyberpunk chess game with a computer opponent, two-player mode and an openings trainer.",
+         "Python · Pygame")
+    mini("calc", "#1A2224", "#8FB9B5", "Desktop · Java", "Scientific Calculator",
+         "Java Swing scientific calculator with memory and calculation history.",
+         "Java · Swing")
     contact()

@@ -20,15 +20,16 @@
   <a href="https://github.com/azraozdas/AI_SE04_StudyRiskPredictor"><img src="assets/f-studor.svg" width="49%" alt="Studor: ML academic risk predictor" /></a>
 </p>
 
-<img src="assets/more.svg" width="100%" alt="More projects: clarivo, ade-website, pagerank, chessy" />
+### More projects
 
-<p align="center"><sub>
-  <a href="https://github.com/azraozdas/clarivo">clarivo</a> ·
-  <a href="https://github.com/azraozdas/Clarivo_Web">clarivo web</a> ·
-  <a href="https://github.com/azraozdas/ade-website">ade-website</a> ·
-  <a href="https://github.com/azraozdas/pagerank">pagerank</a> ·
-  <a href="https://github.com/azraozdas/chessy">chessy</a>
-</sub></p>
+<p align="center">
+  <a href="https://github.com/azraozdas/clarivo"><img src="assets/m-clarivo.svg" width="49%" alt="Clarivo" /></a>
+  <a href="https://github.com/azraozdas/Clarivo_Web"><img src="assets/m-clarivoweb.svg" width="49%" alt="Clarivo Web" /></a>
+  <a href="https://github.com/azraozdas/ade-website"><img src="assets/m-ade.svg" width="49%" alt="ADE Website" /></a>
+  <a href="https://github.com/azraozdas/pagerank"><img src="assets/m-pagerank.svg" width="49%" alt="Parallel PageRank" /></a>
+  <a href="https://github.com/azraozdas/chessy"><img src="assets/m-chessy.svg" width="49%" alt="Chessy" /></a>
+  <a href="https://github.com/azraozdas/Scientific_Calculator"><img src="assets/m-calc.svg" width="49%" alt="Scientific Calculator" /></a>
+</p>
 
 ## Tech stack
 

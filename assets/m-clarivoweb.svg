@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="518" height="218" viewBox="0 0 518 218">
+<g transform="translate(14 14)">
+  <rect width="490" height="190" rx="18" fill="#1B1A26"/>
+  <rect x=".5" y=".5" width="489" height="189" rx="18" fill="none" stroke="#A9A3D6" stroke-opacity=".25"/>
+  <rect x="0" y="28" width="4" height="40" rx="2" fill="#A9A3D6">
+    <animate attributeName="height" values="40;64;40" dur="5s" repeatCount="indefinite"/></rect>
+  <text x="28" y="48" font-family="Menlo, Consolas, monospace" font-size="12" fill="#A9A3D6">Web · Fintech</text>
+  <text x="28" y="80" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#E3E7EE">Clarivo Web</text>
+  <text x="466" y="48" text-anchor="end" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="16" fill="#A9A3D6">↗</text>
+  <text x="28" y="108" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#C3CAD6">Web version of Clarivo: market, portfolio, news and</text>
+  <text x="28" y="129" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#C3CAD6">stock detail pages with Chart.js charts.</text>
+  <text x="28" y="166" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8A93A3">JavaScript · HTML · CSS</text>
+</g>
+</svg>
